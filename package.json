@@ -21,12 +21,16 @@
     "navigator",
     "jadehs",
     "jade",
-    "hochschule"
+    "hochschule",
+    "jade hochschule"
   ],
   "author": "Nichlas Schipper",
   "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/nic-schi/stratnavi-create-tool/issues"
   },
-  "homepage": "https://github.com/nic-schi/stratnavi-create-tool#readme"
+  "homepage": "https://github.com/nic-schi/stratnavi-create-tool#readme",
+  "publishConfig": {
+    "@nic-schi:registry": "https://npm.pkg.github.com"
+  }
 }
