@@ -4,7 +4,10 @@
   "description": "Ermöglicht es im Strategienavigator ein Tool mithilfe der Kommandozeile zu erstellen.",
   "main": "index.js",
   "scripts": {
-    "test": "exit 0"
+    "start": "node index.js"
+  },
+  "bin": {
+    "create-tool": "./index.js"
   },
   "repository": {
     "type": "git",
