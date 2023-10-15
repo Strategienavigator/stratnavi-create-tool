@@ -1,0 +1,32 @@
+{
+  "name": "@nic-schi/stratnavi-create-tool",
+  "version": "1.0.0",
+  "description": "Ermöglicht es im Strategienavigator ein Tool mit Hilfe der Kommandazeile zu erstellen.",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nic-schi/stratnavi-create-tool.git"
+  },
+  "keywords": [
+    "stratnavi",
+    "Strategienavigator",
+    "toolbox-frontend",
+    "nic-schi",
+    "toolbox-backend",
+    "toolbox",
+    "strategie",
+    "navigator",
+    "jadehs",
+    "jade",
+    "hochschule"
+  ],
+  "author": "Nichlas Schipper",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/nic-schi/stratnavi-create-tool/issues"
+  },
+  "homepage": "https://github.com/nic-schi/stratnavi-create-tool#readme"
+}
