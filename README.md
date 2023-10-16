@@ -2,7 +2,7 @@
 Ermöglicht es im Strategienavigator ein Tool mithilfe der Kommandozeile zu erstellen.
 
 ### Usage
-![img.png](resources/usage.png)
+![(usage.png)](https://github.com/nic-schi/stratnavi-create-tool/blob/main/resources/usage.png)
 
 ### Example
 ```shell
