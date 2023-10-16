@@ -6,6 +6,7 @@ const version = require("./package.json");
 const {ArgumentParser} = require("argparse");
 const {input, confirm} = require("@inquirer/prompts");
 const fs = require("fs");
+const {path} = require("os");
 
 String.prototype.toPascalCase = function() {
     return this
@@ -57,6 +58,15 @@ parser.add_argument('name', { metavar: "name", type: "str", help: "Der Name des 
 parser.add_argument('displayName', { metavar: "dName", type: "str", help: "Der Anzeigename des Tools"});
 parser.add_argument('-m', { action: 'store_true', help: "Wartungsmodus anschalten" });
 parser.add_argument('-v', '--version', { action: 'version', version });
+
+parser.add_argument('-p', '--path', { action: 'store', type: function dir_path(value) {
+        try {
+            fs.lstatSync(value).isDirectory();
+        } catch (ex) {
+            throw TypeError("Couldn't find given Directory!");
+        }
+        return value;
+    }, help: "Ablegepfad (Ordner)"});
 
 const replaceAll = (data, args, stepStrings) => {
     let argsCC = args.name.toPascalCase();
@@ -130,7 +140,7 @@ const getInputs = async () => {
 
 getInputs().then(inputs => {
     let pascalName = args.name.toPascalCase();
-    let folder = `${__dirname}/${pascalName}`;
+    let folder = `${args.path ?? process.cwd()}/${args.name}`;
     let stepsFolder = `${folder}/steps`;
     let templateFolder = `${__dirname}/template`;
 
@@ -168,10 +178,14 @@ getInputs().then(inputs => {
                 data = replaceAll(data, args, stepStrings);
                 data = data.replaceAll(REPLACES.JSONImporterImport, `\nimport {${pascalName}JSONImporter} from "./import/${pascalName}JSONImporter";`);
 
+                let add = "";
+                let excelImport = "";
                 if (inputs.useExcelExport) {
-                    data = data.replaceAll(REPLACES.ExcelExportAdd, `\nthis.addExporter(new ${pascalName}ExcelExporter());`);
-                    data = data.replaceAll(REPLACES.ExcelExportImport, `\nimport {${pascalName}ExcelExporter} from "./export/${pascalName}ExcelExporter";`);
+                    add = `\n\t\tthis.addExporter(new ${pascalName}ExcelExporter());`;
+                    excelImport = `\nimport {${pascalName}ExcelExporter} from "./export/${pascalName}ExcelExporter";`;
                 }
+                data = data.replaceAll(REPLACES.ExcelExportAdd, add);
+                data = data.replaceAll(REPLACES.ExcelExportImport, excelImport);
 
                 fs.writeFile(`${folder}/${pascalName}.tsx`, data, 'utf8', (err) => {
                     if (err) {
