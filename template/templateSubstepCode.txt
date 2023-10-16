@@ -1,0 +1,17 @@
+
+    getStepCount(data: <EPHAFPJMNO>Values): number {
+        return 0;
+    }
+
+    isStepUnlocked(subStep: number, data: <EPHAFPJMNO>Values): boolean {
+        return false;
+    }
+
+    validateStep(subStep: number, data: <EPHAFPJMNO>Values): UIError[] {
+        let errors: UIError[] = [];
+
+        // Validierung
+        // ...
+
+        return errors;
+    }

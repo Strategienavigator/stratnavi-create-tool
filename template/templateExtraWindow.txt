@@ -1,0 +1,24 @@
+import {ExtraWindowComponent} from "../../../../general-components/Tool/ExtraWindowComponent/ExtraWindowComponent";
+import {<EPHAFPJMNO>Values} from "../<EPHAFPJMNO>";
+
+import "./<TCLTINWSSI>.scss";
+
+interface <KDEPRPMGKG>ExtraWindowState {
+
+}
+
+class <KDEPRPMGKG>ExtraWindow extends ExtraWindowComponent<<EPHAFPJMNO>Values, <KDEPRPMGKG>ExtraWindowState> {
+
+    render() {
+        return (
+            <>
+                Hallo Welt!
+            </>
+        )
+    }
+
+}
+
+export {
+    <KDEPRPMGKG>ExtraWindow
+}

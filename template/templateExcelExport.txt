@@ -1,0 +1,19 @@
+import {ExcelExporter} from "../../../../general-components/Export/ExcelExporter";
+import XLSX, {Range, WorkBook, WorkSheet} from "xlsx-js-style";
+import {SaveResource} from "../../../../general-components/Datastructures";
+import {<EPHAFPJMNO>Values} from "../<EPHAFPJMNO>";
+<IWHMAOLWRS>
+
+class <EPHAFPJMNO>ExcelExporter extends ExcelExporter<<EPHAFPJMNO>Values> {
+
+    protected buildExcel(workbook: WorkBook, data: SaveResource<<EPHAFPJMNO>Values>): boolean {
+<BJQQEFIPWA>
+        return true;
+    }
+
+<IWDJGMFWRS>
+}
+
+export {
+    <EPHAFPJMNO>ExcelExporter
+}

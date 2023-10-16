@@ -1,0 +1,30 @@
+import {Step, StepProp} from "../../../../../general-components/Tool/SteppableTool/StepComponent/Step/Step";
+import {<EPHAFPJMNO>Values} from "../../<EPHAFPJMNO>";
+
+export interface <KDEPRPMGKG>Values {
+
+}
+
+interface <KDEPRPMGKG>ComponentState {
+
+}
+
+class <KDEPRPMGKG>Component extends Step<<EPHAFPJMNO>Values,<KDEPRPMGKG>ComponentState> {
+
+    public constructor(props: StepProp<<EPHAFPJMNO>Values> | Readonly<StepProp<<EPHAFPJMNO>Values>>) {
+        super(props);
+    }
+
+    protected build(): JSX.Element {
+        return (
+            <>
+                Hallo Welt!
+            </>
+        );
+    }
+
+}
+
+export {
+    <KDEPRPMGKG>Component
+}

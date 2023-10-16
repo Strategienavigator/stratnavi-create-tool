@@ -1,0 +1,52 @@
+import {
+    StepDataHandler,
+    StepDefinition<CJGTJNYRQY>
+} from "../../../../../general-components/Tool/SteppableTool/StepComponent/StepComponent";
+import {UIError} from "../../../../../general-components/Error/UIErrors/UIError";
+import {Draft} from "immer";
+import {StepProp} from "../../../../../general-components/Tool/SteppableTool/StepComponent/Step/Step";
+import {ComponentClass, FunctionComponent} from "react";<SRXXEQMYCJ>
+import {<EPHAFPJMNO>Values} from "../../<EPHAFPJMNO>";
+import {<KDEPRPMGKG>Component} from "./<KDEPRPMGKG>Component";
+
+class <KDEPRPMGKG> implements StepDefinition<<EPHAFPJMNO>Values>, StepDataHandler<<EPHAFPJMNO>Values><DOUFGUACEX> {
+    form: FunctionComponent<StepProp<<EPHAFPJMNO>Values>> | ComponentClass<StepProp<<EPHAFPJMNO>Values>>;
+    id: string;
+    title: string;
+    dataHandler: StepDataHandler<<EPHAFPJMNO>Values>;<LHDXTCHDDA>
+
+    constructor() {
+        this.id = "<GGHPKHMEQV>";
+        this.title = "<CLAYJUMPJR>";
+        this.dataHandler = this;
+        this.form = <KDEPRPMGKG>Component;
+        <KHAQMATZEZ><JFOAACOIED>
+    }
+
+    deleteData(data: Draft<<EPHAFPJMNO>Values>): void {
+        data["<GGHPKHMEQV>"] = undefined;
+    }
+
+    fillFromPreviousValues(data: Draft<<EPHAFPJMNO>Values>): void {
+        data["<GGHPKHMEQV>"] = {};
+    }
+
+    isUnlocked(data: <EPHAFPJMNO>Values): boolean {
+        return data["<GGHPKHMEQV>"] !== undefined;
+    }
+
+    validateData(data: <EPHAFPJMNO>Values): UIError[] {
+        let errors: UIError[] = [];
+
+        // Validierung
+        // ...
+
+        return errors;
+    }
+    <XNZTLZNVWG>
+
+}
+
+export {
+    <KDEPRPMGKG>
+}

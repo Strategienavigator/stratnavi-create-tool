@@ -1,0 +1,63 @@
+import {SteppableTool} from "../../../general-components/Tool/SteppableTool/SteppableTool";
+import {ReactNode} from "react";
+import {RouteComponentProps} from "react-router";
+import {faCube} from "@fortawesome/free-solid-svg-icons";
+import {JSONExporter} from "../../../general-components/Export/JSONExporter";<XZLXUFLQAW><VVWYXXOWYW>
+<CYGNPBTJHG>
+
+import "./<GQGAKTYFMU>.scss";
+
+export interface <EPHAFPJMNO>Values {
+    <EEAJOESUNA>
+}
+
+/**
+* Repräsentiert das Tool "<GTIITEGVHM>"
+*/
+class <EPHAFPJMNO> extends SteppableTool<<EPHAFPJMNO>Values> {
+
+    constructor(props: RouteComponentProps, context: any) {
+        super(props, context, "<GTIITEGVHM>", faCube, 0);
+
+        // Wartungarbeiten?
+        this.setMaintenance(<YDLXOYVBGG>);
+
+        // Exports
+        this.addExporter(new JSONExporter());<UCOLCBBPMD>
+
+        // Imports
+        this.setImporter(new <EPHAFPJMNO>JSONImporter());
+
+        // Schritte
+        <HMZOHQRXPU>
+    }
+
+    protected getInitData(): <EPHAFPJMNO>Values {
+        let data = {
+            <DYOZJAQJZS>
+        };
+        this.getStep(0).dataHandler.fillFromPreviousValues(data);
+        return data;
+    }
+
+    protected renderShortDescription(): ReactNode {
+        return (
+            <>
+                Ich bin eine Shortdescription!
+            </>
+        );
+    }
+
+    protected renderTutorial(): ReactNode {
+        return (
+            <>
+                Ich bin ein Tutorial. Ich erscheine auf der linken Seite!
+            </>
+        );
+    }
+
+}
+
+export {
+    <EPHAFPJMNO>
+}
