@@ -11,8 +11,7 @@
     "create-tool": "create-tool.js"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nic-schi/stratnavi-create-tool.git"
+    "url": "https://github.com/nic-schi/stratnavi-create-tool.git"
   },
   "keywords": [
     "stratnavi",
