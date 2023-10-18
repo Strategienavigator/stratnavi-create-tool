@@ -18,6 +18,7 @@ jobs:
   publish-gpr:
     needs: build
     runs-on: ubuntu-latest
+    environment: stratnavi-createtool
     permissions:
       packages: write
       contents: read
