@@ -34,9 +34,6 @@
     "url": "https://github.com/nic-schi/stratnavi-create-tool/issues"
   },
   "homepage": "https://github.com/nic-schi/stratnavi-create-tool#readme",
-  "publishConfig": {
-    "@nic-schi:registry": "https://npm.pkg.github.com"
-  },
   "dependencies": {
     "@inquirer/prompts": "^3.2.0",
     "argparse": "^2.0.1",
