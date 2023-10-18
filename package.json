@@ -1,6 +1,6 @@
 {
   "name": "@nic-schi/stratnavi-create-tool",
-  "version": "1.2.2",
+  "version": "1.3.0",
   "description": "Ermöglicht es im Strategienavigator ein Tool mithilfe der Kommandozeile zu erstellen.",
   "main": "create-tool.js",
   "scripts": {
