@@ -4,7 +4,7 @@
 
         let range: Range = {
             s: {r: 0, c: 0},
-            e: {r: 0, c: 0}
+            e: {r: cell.r, c: cell.c}
         }
         ws["!ref"] = XLSX.utils.encode_range(range);
         return ws;
