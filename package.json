@@ -13,6 +13,9 @@
   "repository": {
     "url": "https://github.com/nic-schi/stratnavi-create-tool.git"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "keywords": [
     "stratnavi",
     "Strategienavigator",
