@@ -1,6 +1,11 @@
 # stratnavi-create-tool
 Ermöglicht es im ![Strategienavigator](https://github.com/ricom/strategienavigator-frontend) ein Tool mithilfe der Kommandozeile zu erstellen.
 
+### Install using...
+```shell
+npm i stratnavi-create-tool
+```
+
 ### Usage
 ![(usage.png)](https://github.com/nic-schi/stratnavi-create-tool/blob/main/resources/usage.png)
 
