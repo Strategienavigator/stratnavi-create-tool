@@ -1,7 +1,7 @@
 # stratnavi-create-tool
-Ermöglicht es im [Strategienavigator:link:](https://github.com/ricom/strategienavigator-frontend) ein Tool mithilfe der Kommandozeile zu erstellen.
+Ermöglicht es im [Strategienavigator :link:](https://github.com/ricom/strategienavigator-frontend) ein Tool mithilfe der Kommandozeile zu erstellen.
 
---> [NPMJS-Page:link:](https://www.npmjs.com/package/stratnavi-create-tool)
+--> [NPMJS-Page :link:](https://www.npmjs.com/package/stratnavi-create-tool)
 
 ### Install using...
 ```shell
