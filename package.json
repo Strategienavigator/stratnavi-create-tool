@@ -1,6 +1,6 @@
 {
   "name": "stratnavi-create-tool",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Ermöglicht es im Strategienavigator ein Tool mithilfe der Kommandozeile zu erstellen.",
   "main": "create-tool.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "create-tool": "create-tool.js"
   },
   "repository": {
-    "url": "https://github.com/nic-schi/stratnavi-create-tool.git"
+    "url": "https://github.com/Strategienavigator/stratnavi-create-tool.git"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
@@ -33,9 +33,9 @@
   "author": "Nichlas Schipper",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/nic-schi/stratnavi-create-tool/issues"
+    "url": "https://github.com/Strategienavigator/stratnavi-create-tool/issues"
   },
-  "homepage": "https://github.com/nic-schi/stratnavi-create-tool#readme",
+  "homepage": "https://github.com/Strategienavigator/stratnavi-create-tool#readme",
   "dependencies": {
     "@inquirer/prompts": "^3.2.0",
     "argparse": "^2.0.1",
